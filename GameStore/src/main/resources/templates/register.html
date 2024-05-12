@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+    
+    <h1 align="center">Add Product</h1>                                  
+                   <table border="1" align="center">                        
+                <form method="post" th:action="@{/users/register}" th:object = "${user}">                                
+                                                                    
+                         <tr>                                               
+                           <td>First Name</td>                                    
+                             <th><input type="text"  th:field="*{firstname}"></th>
+                         </tr>                                              
+                                                                            
+                         <tr>                                               
+                            <td>Last Name</td>                                  
+                              <th><input type="text"  th:field="*{lastname}"></th>  
+                         </tr>                                              
+                                                                            
+                                                                            
+                         <tr>                                               
+                           <td>Email</td>                             
+                             <th><input type="email"  th:field="*{email}"></th>
+                          </tr>
+                          
+                           <tr>                                               
+                           <td>Mobile</td>                             
+                             <th><input type="number"  th:field="*{mobile}"></th>
+                          </tr>  
+                          
+                            <tr>                                               
+                           <td>Password</td>                             
+                             <th><input type="password"  th:field="*{password}"></th>
+                          </tr>                                              
+                                                                            
+                           <tr>                                             
+                             <td><input type="submit" name="submit"></td>   
+                           </tr>                                            
+                                                                            
+                         </form>                                            
+                 </table>       
+    
+</body>
+</html>
